@@ -54,10 +54,10 @@
         	<div class="sidebar-nav navbar-collapse">
 				<ul class="nav in" id="side-menu">
 					<li>
-			            <a href="#"><i class="fa fa-sitemap fa-fw"></i> Multi-Level Dropdown<span class="fa arrow"></span></a>
+			            <a href="{{ url('items') }}"><i class="fa fa-sitemap fa-fw"></i> Items<span class="fa arrow"></span></a>
 			            <ul class="nav nav-second-level collapse in" aria-expanded="true">
 			                <li>
-			                    <a href="#">Second Level Item</a>
+			                    <a href="{{ url('items/create') }}">Add New Item</a>
 			                </li>
 			                <li>
 			                    <a href="#">Second Level Item</a>

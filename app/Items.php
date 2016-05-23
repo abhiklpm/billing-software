@@ -8,6 +8,7 @@ class Items extends Model {
 	protected $fillable = [
 		'code',
 		'name',
+		'status',
 		'created_at',
 		'published_at'
 	];

@@ -17,6 +17,7 @@ class CreateItemsTable extends Migration {
 			$table->increments('id');
 			$table->string('code')->unique();
 			$table->text('name');
+			$table->tinyInteger('status')->default(1);
 			$table->timestamps();
 			$table->timestamp('published_at');
 		});

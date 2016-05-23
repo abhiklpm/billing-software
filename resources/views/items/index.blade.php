@@ -33,6 +33,8 @@
 					</table>			
 				</div>
 			</div>
+		@else
+			<a href="{{ url('items/create') }}">Add new Item</a>
 		@endif
 	</div>
 @stop

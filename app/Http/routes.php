@@ -12,12 +12,13 @@
 */
 
 Route::get('/', 'WelcomeController@index');
-
 Route::get('about', 'PagesController@about');
 
-Route::get('items', 'ItemsController@index');
-
+/*Route::get('items', 'ItemsController@index');
 Route::get('items/add', 'ItemsController@add');
+Route::post('items', 'ItemsController@store');*/
+
+Route::resource('items', 'ItemsController');
 
 Route::controllers([
 	'auth' => 'Auth\AuthController',
